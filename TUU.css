@@ -1,0 +1,173 @@
+/* ===== GENERAL STYLE ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, orange, #ffb347);
+    color: white;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    background-color: rgba(255,255,255,0.15);
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+section h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+section p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* ===== IMAGES ===== */
+img{
+    border-radius: 15px;
+    margin-top: 15px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* ===== TABLE ===== */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+td{
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+/* ===== FORM ===== */
+form{
+    margin-top: 20px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea{
+    height: 120px;
+}
+
+/* ===== BUTTON ===== */
+button{
+    background-color: white;
+    color: orange;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 25px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+
+    section{
+        margin: 15px;
+    }
+
+    table{
+        font-size: 14px;
+    }
+}
